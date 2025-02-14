@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import ReactMarkdown from "react-markdown";
 import axios from 'axios';
 import {
   Box,
@@ -244,7 +245,9 @@ function App() {
                   Suggestions
                 </Typography>
                 <Typography variant="body1" sx={{ whiteSpace: 'pre-wrap' }}>
+                  <ReactMarkdown>
                   {analysisResult.analysis.Suggestions}
+                  </ReactMarkdown>
                 </Typography>
               </CardContent>
             </Card>
